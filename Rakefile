@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'rake'
+require 'yaml'
 
 begin
   require 'jeweler'
@@ -10,11 +11,10 @@ begin
     gem.homepage = "http://github.com/glv/rspec-unit"
     gem.authors = ["Glenn Vanderburg"]
     gem.rubyforge_project = "rspec-unit"
-    gem.add_dependency('rspec', '>= 2.0.0.a7')
+    gem.add_dependency('rspec', '>= 2.0.0.a8')
     gem.has_rdoc = false
     gem.files =  FileList["[A-Z]*", "{bin,lib,examples}/**/*"] 
     gem.rubyforge_project = 'glv' 
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 
   Jeweler::RubyforgeTasks.new
